@@ -44,7 +44,7 @@ TEXT_EXTENSIONS = {
 
 # Files with no extension that are text-based
 NO_EXT_FILES = {
-    'Dockerfile', 'Makefile', 'Rakefile', 'Gemfile', 'Pipfile',
+    'Dockerfile', '.gitignore', 'Makefile', 'Rakefile', 'Gemfile', 'Pipfile',
     'Procfile', 'Vagrantfile', 'Brewfile', 'Guardfile', 'Capfile',
     'Thorfile', 'Berksfile', 'Appraisals', 'Fastfile', 'Appfile',
     'Deliverfile', 'Matchfile', 'Scanfile', 'Gymfile', 'LICENSE',
@@ -116,8 +116,8 @@ class TemplateManager:
         print(f"{Color.BLUE}╔{'═' * (width - 2)}╗{Color.RESET}")
         
         # Title
-        mode_indicator = " [kb]" if self.use_termios else " [txt]"
-        title = f"templet v1.0{mode_indicator}"
+        mode_indicator = " [fancy]" if self.use_termios else " [not-fancy]"
+        title = f"templet {mode_indicator}"
         padding = (width - len(title) - 2) // 2
         print(f"{Color.BLUE}║{Color.RESET}{' ' * padding}{Color.BOLD}{Color.CYAN}{title}{Color.RESET}{' ' * (width - padding - len(title) - 2)}{Color.BLUE}║{Color.RESET}")
         
