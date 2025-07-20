@@ -59,6 +59,9 @@ Example for markdown:
 
 ---
 
-## ✍️ Made with 💙 by Sam
+## 📄 License
 
-MIT License
+under ☕️, check out [the-coffee-license](https://github.com/codinganovel/The-Coffee-License)
+
+I've included both licenses with the repo, do what you know is right. The licensing works by assuming your operating under good faith.
+
